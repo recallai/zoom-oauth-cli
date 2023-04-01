@@ -1,0 +1,2 @@
+class ZoomAPIError(Exception):
+    pass
