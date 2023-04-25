@@ -22,6 +22,8 @@ def status():
     try:
         get_access_token()
         print("Connected")
+    except ValueError:
+        print(f"Not Connected")
     except ZoomAPIError as exc:
         print(f"Not Connected:\n\t{exc}")
 
